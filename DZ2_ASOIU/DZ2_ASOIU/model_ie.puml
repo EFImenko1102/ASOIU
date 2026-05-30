@@ -1,0 +1,17 @@
+@startuml
+entity "country" as country {
+  * country_id : INTEGER <<PK>>
+  --
+  * country_name : TEXT
+}
+
+entity "city" as city {
+  * city_id : INTEGER <<PK>>
+  --
+  * country_id : INTEGER <<FK>>
+  * city_name : TEXT
+  * population_k : INTEGER >= 0
+}
+
+country ||--o{ city : has
+@enduml

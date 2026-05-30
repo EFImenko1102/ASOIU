@@ -1,0 +1,16 @@
+# Build folders
+[Bb]in/
+[Oo]bj/
+
+# User-specific / IDE files
+.idea/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Database files (recreated and seeded automatically at runtime from CSVs)
+*.db
+*.db-shm
+*.db-wal

@@ -1,0 +1,18 @@
+@startchen
+entity "Страна" as Country {
+  country_id <<key>>
+  country_name
+}
+
+entity "Город" as City {
+  city_id <<key>>
+  city_name
+  population_k
+}
+
+relationship "содержит" as Contains {
+}
+
+Country -1- Contains
+Contains -N- City
+@endchen

@@ -1,0 +1,21 @@
+@startuml
+start
+:Создан ReportBuilder(db);
+:Query(SQL отчета 1);
+:_sql заполнен;
+:Title("Города по странам");
+:_title заполнен;
+:Header("Город", "Страна", "Население, тыс.");
+:_headers заполнен;
+:ColumnWidths(22, 18, 18);
+:_widths заполнен;
+:Numbered();
+:_numbered = true;
+:Footer("Всего записей");
+:_footer заполнен;
+:Print();
+:Build выполняет SQL через DatabaseManager;
+:StringBuilder форматирует таблицу;
+:Отчет выводится в консоль;
+stop
+@enduml
