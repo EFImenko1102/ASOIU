@@ -1,0 +1,153 @@
+@model DZ3_ASOIU.Models.ReportsViewModel
+
+@{
+    ViewData["Title"] = "Аналитический отчет";
+}
+
+<div class="animate-fade-in">
+    <div class="mb-5 text-center">
+        <h1 class="card-title-gradient display-5 m-0">Аналитическая отчетность</h1>
+    </div>
+    <ul class="nav nav-pills justify-content-center mb-4" id="reportTabs" role="tablist" style="gap: 0.5rem;">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active btn-outline-custom px-4 py-2 border-0" id="cities-tab" data-bs-toggle="tab" data-bs-target="#cities-panel" type="button" role="tab" aria-controls="cities-panel" aria-selected="true">
+                🌆 Список городов
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link btn-outline-custom px-4 py-2 border-0" id="counts-tab" data-bs-toggle="tab" data-bs-target="#counts-panel" type="button" role="tab" aria-controls="counts-panel" aria-selected="false">
+                📊 Количество по странам
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link btn-outline-custom px-4 py-2 border-0" id="avg-tab" data-bs-toggle="tab" data-bs-target="#avg-panel" type="button" role="tab" aria-controls="avg-panel" aria-selected="false">
+                👥 Среднее население городов
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="reportTabsContent">
+        <div class="tab-pane fade show active" id="cities-panel" role="tabpanel" aria-labelledby="cities-tab">
+            <div class="report-section animate-fade-in">
+                <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+                    <h3>Раздел 1. Полный список городов</h3>
+                    <span class="badge badge-custom badge-population">Всего городов: @Model.Report1.Count</span>
+                </div>
+                <div class="table-responsive-custom">
+                    <table class="table custom-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 80px;">№</th>
+                                <th>Город</th>
+                                <th>Страна (JOIN)</th>
+                                <th>Население, тыс. чел.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{ int index1 = 1; }
+                            @foreach (var item in Model.Report1)
+                            {
+                                <tr>
+                                    <td>
+                                        <span class="text-secondary fw-semibold">@index1</span>
+                                    </td>
+                                    <td class="fw-bold text-light">@item.Name</td>
+                                    <td>
+                                        <span class="badge badge-custom badge-country">📍 @item.CountryName</span>
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-custom badge-population">👥 @item.PopulationK тыс.</span>
+                                    </td>
+                                </tr>
+                                index1++;
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="counts-panel" role="tabpanel" aria-labelledby="counts-tab">
+            <div class="report-section animate-fade-in">
+                <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+                    <h3>Раздел 2. Количество городов по странам</h3>
+                    <span class="badge badge-custom badge-country">Стран в отчете: @Model.Report2.Count</span>
+                </div>
+                <div class="table-responsive-custom">
+                    <table class="table custom-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 80px;">№</th>
+                                <th>Страна</th>
+                                <th>Количество городов (COUNT)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{ int index2 = 1; }
+                            @foreach (var item in Model.Report2)
+                            {
+                                <tr>
+                                    <td>
+                                        <span class="text-secondary fw-semibold">@index2</span>
+                                    </td>
+                                    <td class="fw-bold text-light">@item.CountryName</td>
+                                    <td>
+                                        <span class="badge badge-custom badge-country px-3">📊 @item.CityCount</span>
+                                    </td>
+                                </tr>
+                                index2++;
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="avg-panel" role="tabpanel" aria-labelledby="avg-tab">
+            <div class="report-section animate-fade-in">
+                <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+                    <h3>Раздел 3. Среднее население городов по странам</h3>
+                    <span class="badge badge-custom badge-population">Сортировка по убыванию среднего</span>
+                </div>
+                <div class="table-responsive-custom">
+                    <table class="table custom-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 80px;">№</th>
+                                <th>Страна</th>
+                                <th>Среднее население городов, тыс. чел. (AVG)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{ int index3 = 1; }
+                            @foreach (var item in Model.Report3)
+                            {
+                                <tr>
+                                    <td>
+                                        <span class="text-secondary fw-semibold">@index3</span>
+                                    </td>
+                                    <td class="fw-bold text-light">@item.CountryName</td>
+                                    <td>
+                                        <span class="badge badge-custom badge-population px-3">👥 @item.AvgPopulation тыс.</span>
+                                    </td>
+                                </tr>
+                                index3++;
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        var triggerTabList = [].slice.call(document.querySelectorAll('#reportTabs button'))
+        triggerTabList.forEach(function (triggerEl) {
+            var tabTrigger = new bootstrap.Tab(triggerEl)
+            triggerEl.addEventListener('click', function (event) {
+                event.preventDefault()
+                tabTrigger.show()
+            })
+        })
+    </script>
+}

@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Главная";
+}
+
+<div class="animate-fade-in">
+    <div class="custom-card text-center p-5 mb-4" style="background: linear-gradient(135deg, rgba(19, 27, 46, 0.9) 0%, rgba(29, 38, 59, 0.9) 100%);">
+        <h1 class="display-4 fw-bold mb-3" style="background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            Управление Странами и Городами
+        </h1>
+        <p class="lead text-secondary max-width-600 mx-auto mb-4">
+            Домашнее задание №3 по дисциплине «Архитектура АСОИУ».
+            Современный стек: Entity Framework Core, SQLite, LINQ и веб-интерфейс на ASP.NET Core MVC.
+        </p>
+        <hr class="my-4" style="border-color: var(--border-color);">
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a asp-controller="Countries" asp-action="Index" class="btn btn-primary-gradient">
+                🗂 Справочник стран
+            </a>
+            <a asp-controller="Cities" asp-action="Index" class="btn btn-outline-custom">
+                🌆 Список городов
+            </a>
+            <a asp-controller="Reports" asp-action="Index" class="btn btn-outline-custom">
+                📊 Аналитические отчеты
+            </a>
+        </div>
+    </div>
+</div>

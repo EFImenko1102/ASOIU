@@ -1,0 +1,63 @@
+@model IEnumerable<DZ3_ASOIU.Models.Country>
+
+@{
+    ViewData["Title"] = "Справочник стран";
+}
+
+<div class="animate-fade-in">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="card-title-gradient m-0">Справочник стран</h1>
+            <p class="text-secondary m-0">Управление списком стран</p>
+        </div>
+        <a asp-action="Create" class="btn btn-primary-gradient">
+            ➕ Добавить страну
+        </a>
+    </div>
+
+    <div class="custom-card p-0 overflow-hidden">
+        <div class="table-responsive-custom">
+            <table class="table custom-table">
+                <thead>
+                    <tr>
+                        <th style="width: 100px;">ID</th>
+                        <th>Название страны</th>
+                        <th style="width: 250px; text-align: right;">Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (!Model.Any())
+                    {
+                        <tr>
+                            <td colspan="3" class="text-center text-secondary py-5">
+                                Страны отсутствуют в базе данных.
+                            </td>
+                        </tr>
+                    }
+                    else
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <span class="badge badge-custom badge-country">@item.Id</span>
+                                </td>
+                                <td class="fw-bold text-light">
+                                    @item.Name
+                                </td>
+                                <td class="text-end">
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-custom btn-action">
+                                        ✏️ Редактировать
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger-custom btn-action">
+                                        🗑️ Удалить
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
