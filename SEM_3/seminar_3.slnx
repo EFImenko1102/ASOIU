@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="seminar_3_db/seminar_3_db.csproj" />
+  <Project Path="tdb/tdb.csproj" />
+</Solution>

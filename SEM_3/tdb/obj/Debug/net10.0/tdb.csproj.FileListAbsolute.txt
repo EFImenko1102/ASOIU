@@ -1,0 +1,17 @@
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/bin/Debug/net10.0/dep.csv
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/bin/Debug/net10.0/dev.csv
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/bin/Debug/net10.0/tdb
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/bin/Debug/net10.0/tdb.deps.json
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/bin/Debug/net10.0/tdb.runtimeconfig.json
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/bin/Debug/net10.0/tdb.dll
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/bin/Debug/net10.0/tdb.pdb
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/obj/Debug/net10.0/tdb.GeneratedMSBuildEditorConfig.editorconfig
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/obj/Debug/net10.0/tdb.AssemblyInfoInputs.cache
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/obj/Debug/net10.0/tdb.AssemblyInfo.cs
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/obj/Debug/net10.0/tdb.csproj.CoreCompileInputs.cache
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/obj/Debug/net10.0/tdb.sourcelink.json
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/obj/Debug/net10.0/tdb.dll
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/obj/Debug/net10.0/refint/tdb.dll
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/obj/Debug/net10.0/tdb.pdb
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/obj/Debug/net10.0/tdb.genruntimeconfig.cache
+/home/kirill-efa/RiderProjects/ASOIU/SEM_3/tdb/obj/Debug/net10.0/ref/tdb.dll

@@ -1,0 +1,22 @@
+10
+Red Bull Racing
+228.5
+Ferrari
+226.3
+Mercedes
+224.8
+McLaren
+223.7
+Alpine
+221.4
+Aston Martin
+220.9
+AlphaTauri
+219.6
+Alfa Romeo
+218.2
+Haas
+216.5
+Williams
+215.1
+226.0

@@ -1,0 +1,15 @@
+/home/kirill-efa/RiderProjects/ASOIU/SEM_2/bin/Debug/net10.0/SEM_2
+/home/kirill-efa/RiderProjects/ASOIU/SEM_2/bin/Debug/net10.0/SEM_2.deps.json
+/home/kirill-efa/RiderProjects/ASOIU/SEM_2/bin/Debug/net10.0/SEM_2.runtimeconfig.json
+/home/kirill-efa/RiderProjects/ASOIU/SEM_2/bin/Debug/net10.0/SEM_2.dll
+/home/kirill-efa/RiderProjects/ASOIU/SEM_2/bin/Debug/net10.0/SEM_2.pdb
+/home/kirill-efa/RiderProjects/ASOIU/SEM_2/obj/Debug/net10.0/SEM_2.GeneratedMSBuildEditorConfig.editorconfig
+/home/kirill-efa/RiderProjects/ASOIU/SEM_2/obj/Debug/net10.0/SEM_2.AssemblyInfoInputs.cache
+/home/kirill-efa/RiderProjects/ASOIU/SEM_2/obj/Debug/net10.0/SEM_2.AssemblyInfo.cs
+/home/kirill-efa/RiderProjects/ASOIU/SEM_2/obj/Debug/net10.0/SEM_2.csproj.CoreCompileInputs.cache
+/home/kirill-efa/RiderProjects/ASOIU/SEM_2/obj/Debug/net10.0/SEM_2.sourcelink.json
+/home/kirill-efa/RiderProjects/ASOIU/SEM_2/obj/Debug/net10.0/SEM_2.dll
+/home/kirill-efa/RiderProjects/ASOIU/SEM_2/obj/Debug/net10.0/refint/SEM_2.dll
+/home/kirill-efa/RiderProjects/ASOIU/SEM_2/obj/Debug/net10.0/SEM_2.pdb
+/home/kirill-efa/RiderProjects/ASOIU/SEM_2/obj/Debug/net10.0/SEM_2.genruntimeconfig.cache
+/home/kirill-efa/RiderProjects/ASOIU/SEM_2/obj/Debug/net10.0/ref/SEM_2.dll

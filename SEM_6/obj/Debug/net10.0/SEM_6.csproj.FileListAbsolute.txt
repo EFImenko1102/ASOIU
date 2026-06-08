@@ -1,0 +1,15 @@
+/home/kirill-efa/RiderProjects/ASOIU/SEM_6/bin/Debug/net10.0/SEM_6
+/home/kirill-efa/RiderProjects/ASOIU/SEM_6/bin/Debug/net10.0/SEM_6.deps.json
+/home/kirill-efa/RiderProjects/ASOIU/SEM_6/bin/Debug/net10.0/SEM_6.runtimeconfig.json
+/home/kirill-efa/RiderProjects/ASOIU/SEM_6/bin/Debug/net10.0/SEM_6.dll
+/home/kirill-efa/RiderProjects/ASOIU/SEM_6/bin/Debug/net10.0/SEM_6.pdb
+/home/kirill-efa/RiderProjects/ASOIU/SEM_6/obj/Debug/net10.0/SEM_6.GeneratedMSBuildEditorConfig.editorconfig
+/home/kirill-efa/RiderProjects/ASOIU/SEM_6/obj/Debug/net10.0/SEM_6.AssemblyInfoInputs.cache
+/home/kirill-efa/RiderProjects/ASOIU/SEM_6/obj/Debug/net10.0/SEM_6.AssemblyInfo.cs
+/home/kirill-efa/RiderProjects/ASOIU/SEM_6/obj/Debug/net10.0/SEM_6.csproj.CoreCompileInputs.cache
+/home/kirill-efa/RiderProjects/ASOIU/SEM_6/obj/Debug/net10.0/SEM_6.sourcelink.json
+/home/kirill-efa/RiderProjects/ASOIU/SEM_6/obj/Debug/net10.0/SEM_6.dll
+/home/kirill-efa/RiderProjects/ASOIU/SEM_6/obj/Debug/net10.0/refint/SEM_6.dll
+/home/kirill-efa/RiderProjects/ASOIU/SEM_6/obj/Debug/net10.0/SEM_6.pdb
+/home/kirill-efa/RiderProjects/ASOIU/SEM_6/obj/Debug/net10.0/SEM_6.genruntimeconfig.cache
+/home/kirill-efa/RiderProjects/ASOIU/SEM_6/obj/Debug/net10.0/ref/SEM_6.dll
